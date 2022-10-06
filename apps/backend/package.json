@@ -1,5 +1,5 @@
 {
-  "name": "atlas-backend",
+  "name": "backend",
   "private": true,
   "version": "0.1.0",
   "scripts": {
@@ -9,10 +9,9 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.4.1",
-    "@strapi/plugin-users-permissions": "4.4.1",
-    "@strapi/strapi": "4.4.1",
-    "better-sqlite3": "7.4.6",
+    "@strapi/plugin-i18n": "4.4.3",
+    "@strapi/plugin-users-permissions": "4.4.3",
+    "@strapi/strapi": "4.4.3",
     "pg": "^8.8.0"
   },
   "author": {
@@ -25,5 +24,8 @@
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@strapi/typescript-utils": "^4.4.3"
+  }
 }

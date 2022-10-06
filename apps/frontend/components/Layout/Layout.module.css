@@ -1,0 +1,11 @@
+.container {
+  background: black;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}

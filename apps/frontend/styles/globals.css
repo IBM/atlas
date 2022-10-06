@@ -7,11 +7,6 @@ body {
 }
 
 body {
-  max-width: 600px;
-  margin: 10vh auto;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
 }
 
 pre {
@@ -20,7 +15,6 @@ pre {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -30,9 +24,5 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
   }
 }

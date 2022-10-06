@@ -1,19 +1,18 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 import { fetchAPI } from "../../lib/api";
-import Link from 'next/link';
+import Link from "next/link";
+import styles from "./TechnologyPage.module.css";
+import { Layout } from "../../components/Layout";
 
 const Home: NextPage = (technology: any) => {
   return (
-    <div>
-
-    <h1><Link href="/"><a style={{textDecoration: 'underline'}}>Home</a></Link></h1>
-   
-    <pre>
-      {JSON.stringify(technology,null,2)}
-    </pre>
-    </div>
-  )
-}
+    <Layout>
+      <div className={styles.container}>
+        {JSON.stringify(technology, null, 2)}
+      </div>
+    </Layout>
+  );
+};
 
 export async function getStaticPaths() {
   const technologies = await fetchAPI("/technologies?populate=*");
@@ -30,8 +29,10 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   try {
     // Filter by slug
-    const {data} = await fetchAPI(`/technologies/?filters\[slug\][$eq]=${params.slug}&populate=*`);
-    
+    const { data } = await fetchAPI(
+      `/technologies/?filters\[slug\][$eq]=${params.slug}&populate=*`
+    );
+
     // Grab first result
     const [technology] = data;
     return {
@@ -43,4 +44,4 @@ export async function getStaticProps({ params }: any) {
   }
 }
 
-export default Home
+export default Home;

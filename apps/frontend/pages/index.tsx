@@ -1,25 +1,37 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
+import type { NextPage } from "next";
+import Link from "next/link";
+import { Layout } from "../components/Layout";
 import { fetchAPI } from "../lib/api";
 
 const Home: NextPage = (props: any) => {
   return (
-    <main>
+    <Layout>
       {props.technologies.map(({ id, attributes }: any) => {
         const { name, slug, description, milestones } = attributes;
-        return <div key={`${id}-${name}`}>
-          <h1><Link href={`/technology/${slug}`}><a style={{ textDecoration: 'underline' }}>{name}</a></Link></h1>
-          <p>{description}</p>
-          <ul>
-            {milestones.map(({ year, strategy }: any) => {
-              return <li key={`${name}–${year}`}>{`${year} – ${strategy}`}</li>
-            })}
-          </ul>
-        </div>
+        return (
+          <div key={`${id}-${name}`}>
+            <h1>
+              <Link href={`/technology/${slug}`}>
+                <a style={{ textDecoration: "underline" }}>{name}</a>
+              </Link>
+            </h1>
+            <p>{description}</p>
+            <ul>
+              {milestones.map(({ year, strategy }: any) => {
+                return (
+                  <li key={`${name}–${year}`}>{`${year} – ${strategy.slice(
+                    0,
+                    20
+                  )}`}</li>
+                );
+              })}
+            </ul>
+          </div>
+        );
       })}
-    </main>
-  )
-}
+    </Layout>
+  );
+};
 
 export async function getStaticProps() {
   try {
@@ -27,13 +39,13 @@ export async function getStaticProps() {
 
     return {
       props: {
-        technologies
+        technologies,
       },
     };
   } catch (error) {
     console.error(error);
-    return {}
+    return {};
   }
 }
 
-export default Home
+export default Home;
