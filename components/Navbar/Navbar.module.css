@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   width: 100%;
-  background: #3f3f3f;
+  background: black;
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
@@ -15,3 +15,5 @@
   margin-right: 1rem;
   font-weight: bold;
 }
+
+/* hello */
