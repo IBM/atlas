@@ -10,7 +10,7 @@ const Home: NextPage = ({ technologies, navItems }: any) => {
         return (
           <div key={description}>
             <h1>
-              <Link href={`/technology/${slug}`}>
+              <Link href={`/${slug}`}>
                 <a style={{ textDecoration: "underline" }}>{name}</a>
               </Link>
             </h1>
