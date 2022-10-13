@@ -17,8 +17,8 @@ export const Navbar = ({ navItems }: { navItems: NavItem[] }) => {
   return (
     <nav className={styles.nav}>
       <Navlink slug="/" name="Home" />
-      {navItems.map((tech) => (
-        <Navlink {...tech} />
+      {navItems.map(({ name, slug }) => (
+        <Navlink key={name} slug={slug} name={name} />
       ))}
     </nav>
   );
@@ -28,7 +28,7 @@ const Navlink = ({ slug, name }: { slug: string; name: string }) => {
   const { asPath } = useRouter();
   const isActive = asPath === slug;
   return (
-    <Link href={slug} key={slug}>
+    <Link href={slug}>
       <a className={isActive ? styles.active : ""}>{name}</a>
     </Link>
   );
