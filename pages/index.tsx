@@ -2,28 +2,25 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { Layout } from "../components/Layout";
 import { getTechnologies } from "../lib/api";
+import styles from "../styles/Home.module.css";
+import { Atlas } from "../components/Atlas";
 
-const Home: NextPage = ({ technologies, navItems }: any) => {
+const Home: NextPage = ({ technologies }: any) => {
   return (
-    <Layout navItems={navItems}>
-      {technologies.map(({ name, slug, description, milestones }: any) => {
-        return (
-          <div key={description}>
-            <h1>
-              <Link href={`/${slug}`}>
-                <a style={{ textDecoration: "underline" }}>{name}</a>
-              </Link>
-            </h1>
-            <p>{description}</p>
-            <ul>
-              {milestones.map((milestone: any) => {
-                // const { year, strategy } = milestone.fields;
-                return null;
-              })}
-            </ul>
-          </div>
-        );
-      })}
+    <Layout>
+      <h1 className={styles.heading}>
+        IBM
+        <br />
+        Technology
+        <br />
+        Atlas
+      </h1>
+      <p className={styles.subheading}>
+        We are writing the next chapter in Computing with six technology
+        roadmaps that will bring a new era of performance and efficiency to
+        information technology and business.
+      </p>
+      <Atlas />
     </Layout>
   );
 };
@@ -31,15 +28,10 @@ const Home: NextPage = ({ technologies, navItems }: any) => {
 export async function getStaticProps() {
   try {
     const technologies = await getTechnologies();
-    const navItems = technologies.map((tech: any) => ({
-      name: tech.name,
-      slug: tech.slug,
-    }));
 
     return {
       props: {
         technologies,
-        navItems,
       },
     };
   } catch (error) {

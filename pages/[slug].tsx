@@ -3,9 +3,9 @@ import styles from "./TechnologyPage.module.css";
 import { Layout } from "../components/Layout";
 import { getTechnologies } from "../lib/api";
 
-const TechnologyPage: NextPage = ({ technology, navItems }: any) => {
+const TechnologyPage: NextPage = ({ technology }: any) => {
   return (
-    <Layout navItems={navItems}>
+    <Layout>
       <div className={styles.container}>
         {JSON.stringify(technology, null, 2)}
       </div>
@@ -34,14 +34,9 @@ export async function getStaticProps({ params }: any) {
       (tech: any) => tech.slug === params.slug
     );
 
-    const navItems = technologies.map((tech: any) => ({
-      name: tech.name,
-      slug: tech.slug,
-    }));
-
     // Grab first result
     return {
-      props: { technology, navItems },
+      props: { technology },
       revalidate: 1,
     };
   } catch (error) {
