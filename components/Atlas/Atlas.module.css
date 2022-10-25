@@ -1,0 +1,17 @@
+.wrapper [id$="full"] {
+  display: none;
+}
+
+.wrapper text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+.years text {
+  font-size: 14px;
+  font-weight: 500;
+}
