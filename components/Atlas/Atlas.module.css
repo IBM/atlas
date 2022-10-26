@@ -1,5 +1,6 @@
-.wrapper [id$="full"] {
-  display: none;
+.full {
+  opacity: 0;
+  transition: opacity 0.15s ease;
 }
 
 .wrapper text {
@@ -14,4 +15,18 @@
 .years text {
   font-size: 14px;
   font-weight: 500;
+}
+
+.segment {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.segment:hover {
+  opacity: var(--opacity);
+  cursor: pointer;
+}
+
+.technology:has(a:hover) .full {
+  opacity: 1;
 }
