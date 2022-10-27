@@ -1,0 +1,67 @@
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+}
+
+.wrapper text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+.years text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.full {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+
+.segment {
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.segment:hover {
+  opacity: var(--opacity);
+  cursor: pointer;
+}
+
+.technology:has(a:hover) .full {
+  opacity: 1;
+}
+
+.nodes {
+  pointer-events: none;
+}
+
+.tooltip {
+  background-color: #f2f4f8 !important;
+  padding: 1rem !important;
+  opacity: 1 !important;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+
+  &::after {
+    background-color: #f2f4f8 !important;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #121619;
+  }
+}
+
+.tooltipHeading {
+  font-weight: bold;
+}
+
+.tooltipBody {
+  max-width: 250px;
+}

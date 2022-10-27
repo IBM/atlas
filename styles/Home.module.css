@@ -1,7 +1,22 @@
 .heading {
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #0f62fe;
 }
 
 .subheading {
+  max-width: 300px;
   font-weight: 400;
+  color: #4d5358;
+}
+
+@media (max-width: 1200px) {
+  .text {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
