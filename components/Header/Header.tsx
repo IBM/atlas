@@ -17,7 +17,7 @@ const AtlasHeader = () => (
     <div className={styles.logoWrapper}>
       <img className={styles.logo} src={logo.src} alt="IBM 8 Bar Logo" />
     </div>
-    <HeaderNavigation>
+    <HeaderNavigation aria-label="IBM Technology Atlas">
       <Link passHref href="https://research.ibm.com">
         <HeaderMenuItem>10 Year Vision</HeaderMenuItem>
       </Link>
