@@ -340,14 +340,12 @@ const Atlas = ({ technologies }: any) => {
             style={{ "--opacity": 0.35 } as any}
             data-opacity={0.35}
           />
-          <Link href="/security">
-            <a data-tip="Security" data-for="label">
-              <text id="security_label" transform="translate(718.398 202.988)">
-                <tspan x="0" y="0">
-                  Security
-                </tspan>
-              </text>
-            </a>
+          <Link href="/security" data-tip="Security" data-for="label">
+            <text id="security_label" transform="translate(718.398 202.988)">
+              <tspan x="0" y="0">
+                Security
+              </tspan>
+            </text>
           </Link>
           <path
             id="security_full"
@@ -446,14 +444,12 @@ const Atlas = ({ technologies }: any) => {
             style={{ "--opacity": 0.35 } as any}
             data-opacity={0.35}
           />
-          <Link href="/quantum">
-            <a data-tip="Quantum" data-for="label">
-              <text id="quantum_label" transform="translate(717.31 459.988)">
-                <tspan x="0" y="0">
-                  Quantum
-                </tspan>
-              </text>
-            </a>
+          <Link href="/quantum" data-tip="Quantum" data-for="label">
+            <text id="quantum_label" transform="translate(717.31 459.988)">
+              <tspan x="0" y="0">
+                Quantum
+              </tspan>
+            </text>
           </Link>
           <path
             id="quantum_full"
@@ -552,17 +548,15 @@ const Atlas = ({ technologies }: any) => {
             style={{ "--opacity": 0.35 } as any}
             data-opacity={0.35}
           />
-          <Link href="/hybrid_cloud">
-            <a data-tip="Hybrid Cloud" data-for="label">
-              <text
-                id="hybrid_cloud_label"
-                transform="translate(538.892 642.501)"
-              >
-                <tspan x="0" y="0">
-                  Hybrid Cloud
-                </tspan>
-              </text>
-            </a>
+          <Link href="/hybrid_cloud" data-tip="Hybrid Cloud" data-for="label">
+            <text
+              id="hybrid_cloud_label"
+              transform="translate(538.892 642.501)"
+            >
+              <tspan x="0" y="0">
+                Hybrid Cloud
+              </tspan>
+            </text>
           </Link>
           <path
             id="hybrid_cloud_full"
@@ -661,14 +655,12 @@ const Atlas = ({ technologies }: any) => {
             style={{ "--opacity": 0.35 } as any}
             data-opacity={0.35}
           />
-          <Link href="/data">
-            <a data-tip="Data" data-for="label">
-              <text id="data_label" transform="translate(235.339 642.501)">
-                <tspan x="0" y="0">
-                  Data
-                </tspan>
-              </text>
-            </a>
+          <Link href="/data" data-tip="Data" data-for="label">
+            <text id="data_label" transform="translate(235.339 642.501)">
+              <tspan x="0" y="0">
+                Data
+              </tspan>
+            </text>
           </Link>
           <path
             id="data_full"
@@ -767,14 +759,12 @@ const Atlas = ({ technologies }: any) => {
             style={{ "--opacity": 0.35 } as any}
             data-opacity={0.35}
           />
-          <Link href="/automation">
-            <a data-tip="Automation" data-for="label">
-              <text id="automation_label" transform="translate(0 459.988)">
-                <tspan x="0" y="0">
-                  Automation
-                </tspan>
-              </text>
-            </a>
+          <Link href="/automation" data-tip="Automation" data-for="label">
+            <text id="automation_label" transform="translate(0 459.988)">
+              <tspan x="0" y="0">
+                Automation
+              </tspan>
+            </text>
           </Link>
           <path
             id="automation_full"
@@ -873,14 +863,12 @@ const Atlas = ({ technologies }: any) => {
             style={{ "--opacity": 0.35 } as any}
             data-opacity={0.35}
           />
-          <Link href="/ai">
-            <a data-tip="AI" data-for="label">
-              <text id="ai_label" transform="translate(78.925 202.988)">
-                <tspan x="0" y="0">
-                  AI
-                </tspan>
-              </text>
-            </a>
+          <Link href="/ai" data-tip="AI" data-for="label">
+            <text id="ai_label" transform="translate(78.925 202.988)">
+              <tspan x="0" y="0">
+                AI
+              </tspan>
+            </text>
           </Link>
           <path
             id="ai_full"
