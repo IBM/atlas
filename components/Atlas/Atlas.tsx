@@ -124,8 +124,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(392.624 259.564)"
               >
                 <tspan x="0" y="0">
@@ -148,8 +148,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(392.624 218.755)"
               >
                 <tspan x="0" y="0">
@@ -172,8 +172,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(392.624 177.286)"
               >
                 <tspan x="0" y="0">
@@ -196,8 +196,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(392.624 136.827)"
               >
                 <tspan x="0" y="0">
@@ -220,8 +220,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(392.624 96.306)"
               >
                 <tspan x="0" y="0">
@@ -244,8 +244,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(392.624 56.078)"
               >
                 <tspan x="0" y="0">
@@ -268,8 +268,8 @@ const Atlas = ({ technologies }: any) => {
               <text
                 fill="#121619"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
-                font-size="14"
-                font-weight="500"
+                fontSize="14"
+                fontWeight="500"
                 transform="translate(403.332 14.65)"
               >
                 <tspan x="0" y="0">
