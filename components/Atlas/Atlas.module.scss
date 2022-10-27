@@ -3,13 +3,15 @@
   max-width: 900px;
 }
 
-.wrapper text {
+.wrapper a {
   font-size: 20px;
   font-weight: 400;
+  transition: fill 0.15s ease;
 }
 
 .wrapper a:hover {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  fill: #0f62fe;
 }
 
 .years text {
@@ -19,13 +21,13 @@
 
 .full {
   opacity: 0;
-  transition: opacity 0.15s ease;
+  transition: opacity 500ms ease;
   pointer-events: none;
 }
 
 .segment {
   opacity: 0;
-  transition: opacity 150ms ease;
+  transition: opacity 300ms ease;
 }
 
 .segment:hover {
@@ -37,7 +39,9 @@
   opacity: 1;
 }
 
-.nodes {
+.base,
+.nodes,
+.years {
   pointer-events: none;
 }
 
@@ -64,4 +68,11 @@
 
 .tooltipBody {
   max-width: 250px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
 }

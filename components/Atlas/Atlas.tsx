@@ -91,7 +91,7 @@ const Atlas = ({ technologies }: any) => {
             <stop offset="1" stopColor="#82cfff" stopOpacity=".35" />
           </linearGradient>
         </defs>
-        <g id="base">
+        <g className={styles.base} id="base">
           <g
             id="rings"
             fill="none"
@@ -902,7 +902,6 @@ const Atlas = ({ technologies }: any) => {
       </svg>
       <ReactTooltip
         html
-        multiline
         className={styles.tooltip}
         getContent={(dataTip) => {
           if (!dataTip) return "";
