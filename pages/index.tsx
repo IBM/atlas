@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.css";
 import { Atlas } from "../components/Atlas";
 
 const Home: NextPage = ({ technologies }: any) => {
-  console.log(technologies);
   return (
     <Layout>
       <div className={styles.text}>

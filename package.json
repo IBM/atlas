@@ -15,12 +15,12 @@
     "@carbon/icons-react": "^11.10.0",
     "@carbon/react": "^1.15.0",
     "airtable": "^0.11.5",
+    "classnames": "^2.3.2",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-tooltip": "^4.4.3",
-    "sass": "^1.55.0"
+    "react-tooltip": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "18.8.5",
@@ -30,6 +30,9 @@
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.18",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.8.2",
+    "sass": "^1.55.0",
     "typescript": "4.8.4"
   }
 }

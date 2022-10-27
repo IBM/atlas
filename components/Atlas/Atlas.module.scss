@@ -45,8 +45,19 @@
   pointer-events: none;
 }
 
+.hoverNodes {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.technology:has(a:hover) .hoverNodes,
+.technology:has(.segment:hover) .hoverNodes {
+  opacity: 1;
+}
+
 .tooltip {
   background-color: #f2f4f8 !important;
+
   padding: 1rem !important;
   opacity: 1 !important;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
