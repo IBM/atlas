@@ -18,26 +18,26 @@ const AtlasHeader = () => (
       <img className={styles.logo} src={logo.src} alt="IBM 8 Bar Logo" />
     </div>
     <HeaderNavigation aria-label="IBM Technology Atlas">
-      <Link passHref href="https://research.ibm.com">
+      <Link passHref href="https://research.ibm.com" legacyBehavior>
         <HeaderMenuItem>10 Year Vision</HeaderMenuItem>
       </Link>
       <HeaderMenu aria-label="Link 4" menuLinkName="Roadmaps">
-        <Link href="/ai" passHref>
+        <Link href="/ai" passHref legacyBehavior>
           <HeaderMenuItem>AI</HeaderMenuItem>
         </Link>
-        <Link href="/automation" passHref>
+        <Link href="/automation" passHref legacyBehavior>
           <HeaderMenuItem>Automation</HeaderMenuItem>
         </Link>
-        <Link href="/data" passHref>
+        <Link href="/data" passHref legacyBehavior>
           <HeaderMenuItem>Data</HeaderMenuItem>
         </Link>
-        <Link href="/hybrid-cloud" passHref>
+        <Link href="/hybrid-cloud" passHref legacyBehavior>
           <HeaderMenuItem>Hybrid Cloud</HeaderMenuItem>
         </Link>
-        <Link href="/quantum" passHref>
+        <Link href="/quantum" passHref legacyBehavior>
           <HeaderMenuItem>Quantum</HeaderMenuItem>
         </Link>
-        <Link href="/security" passHref>
+        <Link href="/security" passHref legacyBehavior>
           <HeaderMenuItem>Security</HeaderMenuItem>
         </Link>
       </HeaderMenu>
