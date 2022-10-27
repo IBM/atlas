@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { Layout } from "../components/Layout";
 import { getTechnologies } from "../lib/api";
 import styles from "../styles/Home.module.css";
@@ -6,25 +7,30 @@ import { Atlas } from "../components/Atlas";
 
 const Home: NextPage = ({ technologies }: any) => {
   return (
-    <Layout>
-      <div className={styles.text}>
-        <h1 className={styles.heading}>
-          IBM
-          <br />
-          <span>
-            Technology
+    <>
+      <Head>
+        <title>IBM Technology Atlas</title>
+      </Head>
+      <Layout>
+        <div className={styles.text}>
+          <h1 className={styles.heading}>
+            IBM
             <br />
-            Atlas
-          </span>
-        </h1>
-        <p className={styles.subheading}>
-          We are writing the next chapter in Computing with six technology
-          roadmaps that will bring a new era of performance and efficiency to
-          information technology and business.
-        </p>
-      </div>
-      <Atlas technologies={technologies} />
-    </Layout>
+            <span>
+              Technology
+              <br />
+              Atlas
+            </span>
+          </h1>
+          <p className={styles.subheading}>
+            We are writing the next chapter in Computing with six technology
+            roadmaps that will bring a new era of performance and efficiency to
+            information technology and business.
+          </p>
+        </div>
+        <Atlas technologies={technologies} />
+      </Layout>
+    </>
   );
 };
 
