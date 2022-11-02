@@ -1,3 +1,12 @@
 .container {
   white-space: pre-wrap;
 }
+
+.active {
+  color: red;
+}
+
+.container p {
+  margin-bottom: 2rem;
+  max-width: 60ch;
+}

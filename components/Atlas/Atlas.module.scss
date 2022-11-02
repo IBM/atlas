@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-.technology:has(a:hover) .full {
+.technology:has(text:hover) .full {
   opacity: 1;
 }
 
