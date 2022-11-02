@@ -14,9 +14,9 @@ import styles from "./Header.module.scss";
 
 const AtlasHeader = () => (
   <Header aria-label="IBM Technology Atlas">
-    <div className={styles.logoWrapper}>
+    <Link className={styles.logoWrapper} href="/">
       <img className={styles.logo} src={logo.src} alt="IBM 8 Bar Logo" />
-    </div>
+    </Link>
     <HeaderNavigation aria-label="IBM Technology Atlas">
       <Link passHref href="https://research.ibm.com" legacyBehavior>
         <HeaderMenuItem>10 Year Vision</HeaderMenuItem>
