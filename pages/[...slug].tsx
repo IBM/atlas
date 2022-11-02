@@ -53,7 +53,6 @@ export async function getStaticPaths() {
     return [...acc, ...getPathsForTechnology(technology)];
   }, []);
 
-  console.log(JSON.stringify(paths, null, 2));
   return {
     paths,
     fallback: false,
