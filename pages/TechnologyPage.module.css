@@ -1,12 +1,67 @@
 .container {
-  white-space: pre-wrap;
+  max-width: 1312px;
+  position: relative;
+  overflow: hidden;
 }
 
 .active {
   color: red;
 }
 
-.container p {
-  margin-bottom: 2rem;
-  max-width: 60ch;
+.header {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.atlasTitle {
+  width: 25%;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 30px;
+  width: 50%;
+}
+
+.timeline {
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.sticky {
+  position: fixed;
+  width: calc(0.25 * 1312px + 1rem);
+  background-color: white;
+  box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.25);
+  margin-left: -2rem;
+  padding: 2rem;
+}
+
+.sticky p {
+  font-weight: bold;
+}
+
+.sticky h1 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 48px;
+  font-weight: bold;
+}
+
+.scrolling {
+  display: flex;
+  scrollbar-width: thin;
+  padding-left: calc(0.25 * 1312px);
+}
+
+.milestone {
+  scroll-snap-align: start;
+  width: 400px;
+  scroll-margin: calc(0.25 * 1312px);
+  padding-right: 1rem;
 }
