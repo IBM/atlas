@@ -1,19 +1,7 @@
 .container {
   z-index: 1;
   height: calc(100vh - 3rem);
-  overflow: hidden;
-  padding: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
   padding-bottom: 0;
-}
-
-.wrapper {
-  display: flex;
-  gap: 100px;
-}
-
-@media (max-width: 1024px) {
-  .wrapper {
-    flex-direction: column;
-    gap: 3rem;
-  }
 }

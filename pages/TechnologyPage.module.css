@@ -1,12 +1,90 @@
 .container {
-  white-space: pre-wrap;
+  position: relative;
+  overflow: hidden;
 }
 
 .active {
   color: red;
 }
 
-.container p {
-  margin-bottom: 2rem;
-  max-width: 60ch;
+.header {
+  display: flex;
+  max-width: 1312px;
+  margin-bottom: 4rem;
+}
+
+.atlasTitle {
+  width: 25%;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 30px;
+  width: 50%;
+}
+
+.timeline {
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+}
+
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  width: calc(0.25 * 1312px + 1rem);
+  background-color: white;
+  border-right: 1px solid #dde1e6 /*cg20*/;
+  margin-left: -2rem;
+  padding: 2rem;
+}
+
+.sticky p {
+  font-weight: bold;
+}
+
+.sticky h1 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 48px;
+  font-weight: bold;
+}
+
+.scrolling {
+  display: flex;
+  padding-left: calc(0.25 * 1312px - 1rem);
+}
+
+.milestone {
+  scroll-snap-align: start;
+  width: 320px;
+  scroll-margin: calc(0.25 * 1312px - 1rem);
+  padding: 0 1rem;
+  border-right: 1px solid #dde1e6 /*cg20*/;
+}
+
+.milestone:last-child {
+  border-right: none;
+  margin-right: 5rem;
+}
+
+.yearWrapper {
+  /* padding-bottom: 8px; */
+  border-bottom: 1px solid #121619 /*cg100*/;
+}
+
+.year {
+  font-weight: 300;
+  font-size: 72px;
+  letter-spacing: -2px;
 }
