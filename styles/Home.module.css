@@ -20,3 +20,15 @@
     justify-content: space-between;
   }
 }
+
+.wrapper {
+  display: flex;
+  gap: 100px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

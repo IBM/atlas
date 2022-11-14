@@ -35,15 +35,14 @@ const TechnologyPage: NextPage = ({ technology, year }: any) => {
             {milestones.map((milestone: any) => {
               return (
                 <div className={styles.milestone} key={milestone.year}>
-                  <h2 className={cx(milestone.year === year && styles.active)}>
-                    {milestone.year}
-                  </h2>
+                  <div className={styles.yearWrapper}>
+                    <h2 className={cx(styles.year)}>{milestone.year}</h2>
+                  </div>
                   <p>{milestone.milestone}</p>
                 </div>
               );
             })}
             {/* Dummy milestone for scroll snapping */}
-            <div className={styles.milestone} />
           </div>
         </section>
       </div>
