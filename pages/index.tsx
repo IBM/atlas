@@ -12,23 +12,25 @@ const Home: NextPage = ({ technologies }: any) => {
         <title>IBM Technology Atlas</title>
       </Head>
       <Layout>
-        <div className={styles.text}>
-          <h1 className={styles.heading}>
-            IBM
-            <br />
-            <span>
-              Technology
+        <div className={styles.wrapper}>
+          <div className={styles.text}>
+            <h1 className={styles.heading}>
+              IBM
               <br />
-              Atlas
-            </span>
-          </h1>
-          <p className={styles.subheading}>
-            We are writing the next chapter in Computing with six technology
-            roadmaps that will bring a new era of performance and efficiency to
-            information technology and business.
-          </p>
+              <span>
+                Technology
+                <br />
+                Atlas
+              </span>
+            </h1>
+            <p className={styles.subheading}>
+              We are writing the next chapter in Computing with six technology
+              roadmaps that will bring a new era of performance and efficiency
+              to information technology and business.
+            </p>
+          </div>
+          <Atlas technologies={technologies} />
         </div>
-        <Atlas technologies={technologies} />
       </Layout>
     </>
   );
