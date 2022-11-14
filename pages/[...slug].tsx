@@ -12,18 +12,40 @@ const TechnologyPage: NextPage = ({ technology, year }: any) => {
   return (
     <Layout>
       <div className={styles.container}>
-        <h1>{technology.name}</h1>
-        <p>{technology.description}</p>
-        {milestones.map((milestone: any) => {
-          return (
-            <div key={milestone.year}>
-              <h2 className={cx(milestone.year === year && styles.active)}>
-                {milestone.year}
-              </h2>
-              <p>{milestone.milestone}</p>
-            </div>
-          );
-        })}
+        <div className={styles.header}>
+          <p className={styles.atlasTitle}>
+            IBM
+            <br />
+            Technology
+            <br />
+            Atlas
+          </p>
+          <p className={styles.description}>{technology.description}</p>
+        </div>
+        <section className={styles.timeline}>
+          <div className={styles.sticky}>
+            <h1>
+              {technology.name}
+              <br />
+              Roadmap
+            </h1>
+            <p>Strategic milestones</p>
+          </div>
+          <div className={styles.scrolling}>
+            {milestones.map((milestone: any) => {
+              return (
+                <div className={styles.milestone} key={milestone.year}>
+                  <h2 className={cx(milestone.year === year && styles.active)}>
+                    {milestone.year}
+                  </h2>
+                  <p>{milestone.milestone}</p>
+                </div>
+              );
+            })}
+            {/* Dummy milestone for scroll snapping */}
+            <div className={styles.milestone} />
+          </div>
+        </section>
       </div>
     </Layout>
   );
