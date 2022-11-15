@@ -584,7 +584,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/hybrid_cloud" data-tip="Hybrid Cloud" data-for="label">
+          <Link href="/hybrid-cloud" data-tip="Hybrid Cloud" data-for="label">
             <text
               id="hybrid_cloud_label"
               transform="translate(538.892 642.501)"

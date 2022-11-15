@@ -1,0 +1,24 @@
+@use "styles/variables" as *;
+
+.footer {
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  z-index: 1;
+  background: $cool-gray-100;
+}
+
+.logoWrapper {
+  padding: 0 2rem;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 1px 0;
+  height: 1.45rem;
+  max-width: 100%;
+  filter: invert(1);
+}

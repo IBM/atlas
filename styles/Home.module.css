@@ -13,7 +13,7 @@
   color: #4d5358;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .text {
     max-width: 100%;
     display: flex;
@@ -26,9 +26,9 @@
   gap: 100px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .wrapper {
     flex-direction: column;
-    gap: 3rem;
+    gap: 0;
   }
 }
