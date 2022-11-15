@@ -23,7 +23,7 @@
 
 .wrapper {
   display: flex;
-  gap: 100px;
+  gap: 200px;
 }
 
 @media (max-width: 900px) {
