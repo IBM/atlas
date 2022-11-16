@@ -352,7 +352,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/security" data-tip="Security" data-for="label">
+          <Link href="/security" data-tip="Security" data-for="segment">
             <text id="security_label" transform="translate(718.398 202.988)">
               <tspan x="0" y="0">
                 Security
@@ -468,7 +468,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/quantum" data-tip="Quantum" data-for="label">
+          <Link href="/quantum" data-tip="Quantum" data-for="segment">
             <text id="quantum_label" transform="translate(717.31 459.988)">
               <tspan x="0" y="0">
                 Quantum
@@ -584,7 +584,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/hybrid_cloud" data-tip="Hybrid Cloud" data-for="label">
+          <Link href="/hybrid-cloud" data-tip="Hybrid Cloud" data-for="segment">
             <text
               id="hybrid_cloud_label"
               transform="translate(538.892 642.501)"
@@ -703,7 +703,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/data" data-tip="Data" data-for="label">
+          <Link href="/data" data-tip="Data" data-for="segment">
             <text id="data_label" transform="translate(235.339 642.501)">
               <tspan x="0" y="0">
                 Data
@@ -819,7 +819,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/automation" data-tip="Automation" data-for="label">
+          <Link href="/automation" data-tip="Automation" data-for="segment">
             <text id="automation_label" transform="translate(0 459.988)">
               <tspan x="0" y="0">
                 Automation
@@ -935,7 +935,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/ai" data-tip="AI" data-for="label">
+          <Link href="/ai" data-tip="AI" data-for="segment">
             <text id="ai_label" transform="translate(78.925 202.988)">
               <tspan x="0" y="0">
                 AI
@@ -984,32 +984,27 @@ const Atlas = ({ technologies }: any) => {
         className={styles.tooltip}
         getContent={(dataTip) => {
           if (!dataTip) return "";
-          const [technology, year] = dataTip.split("|");
+          if (dataTip.includes("|")) {
+            const [technology, year] = dataTip.split("|");
 
-          const { milestones } = technologies.find((t: any) => {
-            return t.name === technology;
-          });
+            const { milestones } = technologies.find((t: any) => {
+              return t.name === technology;
+            });
 
-          const { milestone } = milestones.find((m: any) => {
-            return m.year === year;
-          });
+            const { milestone } = milestones.find((m: any) => {
+              return m.year === year;
+            });
 
-          return `<p class="${styles.tooltipHeading}">${technology} ${year}</p><p class="${styles.tooltipBody}">${milestone}</p>`;
+            return `<p class="${styles.tooltipHeading}">${technology} ${year}</p><p class="${styles.tooltipBody}">${milestone}</p>`;
+          } else {
+            // Is a technology title label
+            const { description } = technologies.find((t: any) => {
+              return t.name === dataTip;
+            });
+            return `<p style="font-weight: bold">${dataTip}</p><p style="max-width: 250px">${description}</p>`;
+          }
         }}
         id="segment"
-      />
-      <ReactTooltip
-        html
-        multiline
-        className={styles.tooltip}
-        getContent={(dataTip) => {
-          if (!dataTip) return "";
-          const { description } = technologies.find((t: any) => {
-            return t.name === dataTip;
-          });
-          return `<p style="font-weight: bold">${dataTip}</p><p style="max-width: 250px">${description}</p>`;
-        }}
-        id="label"
       />
     </div>
   );

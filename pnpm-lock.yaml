@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@carbon/icons-react': ^11.10.0
   '@carbon/react': ^1.15.0
+  '@carbon/styles': ^1.17.0
   '@types/node': 18.8.5
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
@@ -25,6 +26,7 @@ specifiers:
 dependencies:
   '@carbon/icons-react': 11.10.0_react@18.2.0
   '@carbon/react': 1.15.0_2mygebwfgdyopr3fy2qddu2eli
+  '@carbon/styles': 1.17.0_sass@1.55.0
   airtable: 0.11.5
   classnames: 2.3.2
   framer-motion: 7.5.3_biqbaboplfbrettd7655fr4n2y
@@ -62,8 +64,8 @@ packages:
     dependencies:
       regenerator-runtime: 0.13.9
 
-  /@carbon/colors/11.6.0:
-    resolution: {integrity: sha512-LE3aaQvRVR9zI2ao4+SHP8vfEaXtfffq4wXHvbPwoTK+I3Db745XuNWeWxC3Rte2uNPS9sjeEyCid2Q0wY/tSw==}
+  /@carbon/colors/11.8.0:
+    resolution: {integrity: sha512-bn2wsfCmSI7zKhB2L10ngVTPLnLFTdGW5EOvG4ZDYi4jitGo893Fm9K7rP0Nri6Y3oKebCmPFiCwNZeXsQeumw==}
     dev: false
 
   /@carbon/feature-flags/0.9.0:
@@ -112,7 +114,7 @@ packages:
       '@carbon/feature-flags': 0.9.0
       '@carbon/icons-react': 11.10.0_react@18.2.0
       '@carbon/layout': 11.7.0
-      '@carbon/styles': 1.15.0_sass@1.55.0
+      '@carbon/styles': 1.17.0_sass@1.55.0
       '@carbon/telemetry': 0.1.0
       classnames: 2.3.2
       copy-to-clipboard: 3.3.2
@@ -134,18 +136,18 @@ packages:
       window-or-global: 1.0.1
     dev: false
 
-  /@carbon/styles/1.15.0_sass@1.55.0:
-    resolution: {integrity: sha512-qyNG95iMHkrz9p0GsTFneVN8nJoPv5z06TVxiFpwGjJXFvlx8ygG+QO1gBkSPFJmOjtA4ejeS38elH2wrQfOBQ==}
+  /@carbon/styles/1.17.0_sass@1.55.0:
+    resolution: {integrity: sha512-RsPIsnIyRQL8ZCq/zf8UAWcdSDcGKwvxbVGbdQzHMFtmjtWc0kp2ftLrMDM4smevohiN8L678pYcLcCE3j7qHQ==}
     peerDependencies:
       sass: ^1.33.0
     dependencies:
-      '@carbon/colors': 11.6.0
+      '@carbon/colors': 11.8.0
       '@carbon/feature-flags': 0.9.0
       '@carbon/grid': 11.7.0
       '@carbon/layout': 11.7.0
       '@carbon/motion': 11.5.0
-      '@carbon/themes': 11.10.0
-      '@carbon/type': 11.10.0
+      '@carbon/themes': 11.12.0
+      '@carbon/type': 11.11.0
       '@ibm/plex': 6.0.0-next.6
       sass: 1.55.0
     dev: false
@@ -155,17 +157,17 @@ packages:
     hasBin: true
     dev: false
 
-  /@carbon/themes/11.10.0:
-    resolution: {integrity: sha512-KdYurybYbI3yo1cYo74RojITfptsRoaXJW6N3FThF+0gv9YnbQlWNsMYwipZa4SwsKAe/0nw/C9yyPiY3/6FuA==}
+  /@carbon/themes/11.12.0:
+    resolution: {integrity: sha512-KquoGiYh+WCFwRqc/Oo2m4fa+NZwA7YgE9KiPkj9Rtbkqx0bkZooYQlzB1YbDSP5/HW4xsVxoj58hT27EVzo3w==}
     dependencies:
-      '@carbon/colors': 11.6.0
+      '@carbon/colors': 11.8.0
       '@carbon/layout': 11.7.0
-      '@carbon/type': 11.10.0
+      '@carbon/type': 11.11.0
       color: 4.2.3
     dev: false
 
-  /@carbon/type/11.10.0:
-    resolution: {integrity: sha512-LjhhJchI0Vpnmq2IkNtHy7HIW/WjiOEVXH+bDKf0Laay0EQtwxagQSI41W2+0dNtcK4zJBKjfm1uorsxmR5/Qw==}
+  /@carbon/type/11.11.0:
+    resolution: {integrity: sha512-eX6z8BibP1En1xBm2wUd01Nzk0Tm1jftR2QSD4JBn4xhnkGR824gpcbLTAIMGx9/Mr3R65Enbam3uFO0OOaH8g==}
     dependencies:
       '@carbon/grid': 11.7.0
       '@carbon/layout': 11.7.0

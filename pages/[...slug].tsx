@@ -1,50 +1,54 @@
 import type { NextPage } from "next";
-import styles from "./TechnologyPage.module.css";
+import styles from "./TechnologyPage.module.scss";
 import { Layout } from "../components/Layout";
 import { getTechnologies } from "../lib/api";
+import { ChevronDown } from "@carbon/icons-react";
 import cx from "classnames";
+import Link from "next/link";
 
 const TechnologyPage: NextPage = ({ technology, year }: any) => {
   let milestones = technology.milestones.sort(
     (a: any, b: any) => a.year - b.year
   );
-
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <p className={styles.atlasTitle}>
-            IBM
+        <p className={styles.atlasTitle}>
+          IBM
+          <br />
+          Technology
+          <br />
+          Atlas
+        </p>
+        <p className={styles.description}>{technology.description}</p>
+        <div className={styles.sticky}>
+          <h1>
+            {technology.name}
             <br />
-            Technology
-            <br />
-            Atlas
-          </p>
-          <p className={styles.description}>{technology.description}</p>
+            Roadmap
+          </h1>
+          <p>Strategic milestones</p>
         </div>
-        <section className={styles.timeline}>
-          <div className={styles.sticky}>
-            <h1>
-              {technology.name}
-              <br />
-              Roadmap
-            </h1>
-            <p>Strategic milestones</p>
-          </div>
-          <div className={styles.scrolling}>
-            {milestones.map((milestone: any) => {
-              return (
-                <div className={styles.milestone} key={milestone.year}>
-                  <div className={styles.yearWrapper}>
-                    <h2 className={cx(styles.year)}>{milestone.year}</h2>
-                  </div>
-                  <p>{milestone.milestone}</p>
+        <div className={styles.scrolling}>
+          {milestones.map((milestone: any) => {
+            return (
+              <div className={styles.milestone} key={milestone.year}>
+                <div className={styles.yearWrapper}>
+                  <h2 className={cx(styles.year)}>{milestone.year}</h2>
                 </div>
-              );
-            })}
-            {/* Dummy milestone for scroll snapping */}
-          </div>
-        </section>
+                <p className={styles.milestoneSummary}>{milestone.milestone}</p>
+                <p className={styles.milestoneDescription}>
+                  {milestone.strategy}
+                </p>
+                <Link href="/" className={styles.howWillWeDoThis}>
+                  <ChevronDown height="16" width="16" />
+                  Learn more
+                </Link>
+              </div>
+            );
+          })}
+          {/* Dummy milestone for scroll snapping */}
+        </div>
       </div>
     </Layout>
   );
