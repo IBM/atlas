@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "./TechnologyPage.module.scss";
 import { Layout } from "../components/Layout";
 import { getTechnologies } from "../lib/api";
-import { ChevronDown } from "@carbon/icons-react";
+import { ChevronDown, ChevronUp } from "@carbon/icons-react";
 import cx from "classnames";
 import Link from "next/link";
 
@@ -30,28 +30,60 @@ const TechnologyPage: NextPage = ({ technology, year }: any) => {
           <p>Strategic milestones</p>
         </div>
         <div className={styles.scrolling}>
-          {milestones.map((milestone: any) => {
-            return (
-              <div className={styles.milestone} key={milestone.year}>
-                <div className={styles.yearWrapper}>
-                  <h2 className={cx(styles.year)}>{milestone.year}</h2>
-                </div>
-                <p className={styles.milestoneSummary}>{milestone.milestone}</p>
-                <p className={styles.milestoneDescription}>
-                  {milestone.strategy}
-                </p>
-                <Link href="/" className={styles.howWillWeDoThis}>
-                  <ChevronDown height="16" width="16" />
-                  Learn more
-                </Link>
-              </div>
-            );
-          })}
-          {/* Dummy milestone for scroll snapping */}
+          {year ? (
+            <SingleMilestone
+              technology={technology}
+              milestones={milestones}
+              year={year}
+            />
+          ) : (
+            <AllMilestones technology={technology} milestones={milestones} />
+          )}
         </div>
       </div>
     </Layout>
   );
+};
+
+const SingleMilestone = ({ milestones, year, technology }: any) => {
+  const milestone = milestones.find(
+    (milestone: any) => milestone.year === year
+  );
+
+  return (
+    <div className={styles.milestone} key={milestone.year}>
+      <div className={styles.yearWrapper}>
+        <h2 className={cx(styles.year)}>{milestone.year}</h2>
+      </div>
+      <p className={styles.milestoneSummary}>{milestone.milestone}</p>
+      <p className={styles.milestoneDescription}>{milestone.strategy}</p>
+      <Link href={`/${technology.slug}`} className={styles.howWillWeDoThis}>
+        <ChevronUp height="16" width="16" />
+        {`${technology.name} roadmap`}
+      </Link>
+    </div>
+  );
+};
+
+const AllMilestones = ({ milestones, technology }: any) => {
+  return milestones.map((milestone: any) => {
+    return (
+      <div className={styles.milestone} key={milestone.year}>
+        <div className={styles.yearWrapper}>
+          <h2 className={cx(styles.year)}>{milestone.year}</h2>
+        </div>
+        <p className={styles.milestoneSummary}>{milestone.milestone}</p>
+        <p className={styles.milestoneDescription}>{milestone.strategy}</p>
+        <Link
+          href={`/${technology.slug}/${milestone.year}`}
+          className={styles.howWillWeDoThis}
+        >
+          <ChevronDown height="16" width="16" />
+          Learn more
+        </Link>
+      </div>
+    );
+  });
 };
 
 const getPathsForTechnology = (technology: any) => {
