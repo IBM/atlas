@@ -51,12 +51,28 @@ const SingleMilestone = ({ milestones, year, technology }: any) => {
   );
 
   return (
-    <div className={styles.milestone} key={milestone.year}>
+    <div className={cx(styles.milestone, styles.single)} key={milestone.year}>
       <div className={styles.yearWrapper}>
         <h2 className={cx(styles.year)}>{milestone.year}</h2>
       </div>
-      <p className={styles.milestoneSummary}>{milestone.milestone}</p>
-      <p className={styles.milestoneDescription}>{milestone.strategy}</p>
+      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
+        <p className={styles.milestoneSummary}>{milestone.milestone}</p>
+        <p className={styles.milestoneDescription}>{milestone.strategy}</p>
+      </div>
+      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
+        <p className={styles.milestoneSummary}>Why this matters</p>
+        <p className={styles.milestoneDescription}>{milestone.significance}</p>
+      </div>
+      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
+        <p className={styles.milestoneSummary}>
+          Innovations that will make this possible
+        </p>
+        <p className={styles.milestoneDescription}>{milestone.innovations}</p>
+      </div>
+      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
+        <p className={styles.milestoneSummary}>Delivery platform</p>
+        <p className={styles.milestoneDescription}>{milestone.platforms}</p>
+      </div>
       <Link href={`/${technology.slug}`} className={styles.howWillWeDoThis}>
         <ChevronUp height="16" width="16" />
         {`${technology.name} roadmap`}

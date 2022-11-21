@@ -6,6 +6,7 @@
   display: grid;
   row-gap: 4rem;
   grid-template-columns: repeat(16, 1fr);
+  padding-bottom: 80px;
   /* grid-template-rows: auto; */
 }
 
@@ -40,6 +41,14 @@
   line-height: 36px;
   margin-bottom: 44px;
   font-weight: bold;
+}
+
+.single {
+  grid-column: 4 / 12;
+}
+
+.single .milestoneSummary {
+  min-width: 240px;
 }
 
 .scrolling {
