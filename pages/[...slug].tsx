@@ -20,14 +20,20 @@ const TechnologyPage: NextPage = ({ technology, year }: any) => {
           <br />
           Atlas
         </p>
-        <p className={styles.description}>{technology.description}</p>
+        <div className={styles.header}>
+          <h1 className={styles.mobileTechnologyTitle}>
+            IBM {technology.name} Roadmap
+          </h1>
+          <p className={styles.description}>{technology.description}</p>
+        </div>
+
         <div className={styles.sticky}>
-          <h1>
+          <h1 className={styles.technologyTitle}>
             {technology.name}
             <br />
             Roadmap
           </h1>
-          <p>Strategic milestones</p>
+          <p className={styles.strategicMilestones}>Strategic milestones</p>
         </div>
         <div className={styles.scrolling}>
           {year ? (
@@ -55,22 +61,27 @@ const SingleMilestone = ({ milestones, year, technology }: any) => {
       <div className={styles.yearWrapper}>
         <h2 className={cx(styles.year)}>{milestone.year}</h2>
       </div>
-      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
+      <div className={styles.milestoneStatement}>
         <p className={styles.milestoneSummary}>{milestone.milestone}</p>
         <p className={styles.milestoneDescription}>{milestone.strategy}</p>
       </div>
-      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
-        <p className={styles.milestoneSummary}>Why this matters</p>
+      <div className={styles.milestoneStatement}>
+        <p className={styles.milestoneSummary}>
+          Why this matters for our clients and the world
+        </p>
         <p className={styles.milestoneDescription}>{milestone.significance}</p>
       </div>
-      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
+      <div className={styles.milestoneStatement}>
         <p className={styles.milestoneSummary}>
-          Innovations that will make this possible
+          The technologies and innovations that will make this possible
         </p>
         <p className={styles.milestoneDescription}>{milestone.innovations}</p>
       </div>
-      <div style={{ display: "flex", maxWidth: "80%", gap: "80px" }}>
-        <p className={styles.milestoneSummary}>Delivery platform</p>
+      <div className={styles.milestoneStatement}>
+        <p className={styles.milestoneSummary}>
+          What platform or infrastructure will these advancements be delivered
+          on
+        </p>
         <p className={styles.milestoneDescription}>{milestone.platforms}</p>
       </div>
       <Link href={`/${technology.slug}`} className={styles.howWillWeDoThis}>

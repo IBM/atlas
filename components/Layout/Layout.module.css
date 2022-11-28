@@ -1,7 +1,13 @@
 .container {
   z-index: 1;
-  height: calc(100vh - 6rem);
   padding-top: 1.5rem;
   padding-left: 2rem;
   padding-bottom: 0;
+  min-height: calc(100vh - 6rem);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-left: 0;
+  }
 }
