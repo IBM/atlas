@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   max-width: 900px;
+  padding-right: 2rem;
 }
 
 .wrapper a {
@@ -83,7 +84,13 @@
 
 @media (max-width: 1024px) {
   .wrapper {
-    max-width: 80vw;
+    max-width: 85vw;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    display: none;
   }
 }

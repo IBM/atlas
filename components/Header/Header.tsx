@@ -6,6 +6,7 @@ import {
   HeaderNavigation,
   HeaderMenu,
   HeaderMenuItem,
+  HeaderName,
 } from "@carbon/react";
 import Link from "next/link";
 import logo from "./logo.png";
@@ -17,6 +18,11 @@ const AtlasHeader = () => (
     <Link className={styles.logoWrapper} href="/">
       <img className={styles.logo} src={logo.src} alt="IBM 8 Bar Logo" />
     </Link>
+    <div className={styles.headerName}>
+      <HeaderName href="/" prefix="IBM">
+        Research Technology Atlas
+      </HeaderName>
+    </div>
     <HeaderNavigation aria-label="IBM Technology Atlas">
       <Link passHref href="https://research.ibm.com" legacyBehavior>
         <HeaderMenuItem>10 Year Vision</HeaderMenuItem>

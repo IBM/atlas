@@ -1,5 +1,6 @@
 .logoWrapper {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   height: 48px;
   display: flex;
   justify-content: center;
@@ -9,4 +10,17 @@
   margin: 1px 0;
   height: 1.45rem;
   max-width: 100%;
+}
+
+.headerName {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .logoWrapper {
+    display: none;
+  }
+  .headerName {
+    display: block;
+  }
 }

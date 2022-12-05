@@ -4,6 +4,7 @@ import { Layout } from "../components/Layout";
 import { getTechnologies } from "../lib/api";
 import styles from "../styles/Home.module.css";
 import { Atlas } from "../components/Atlas";
+import { MobileAtlas } from "../components/MobileAtlas";
 
 const Home: NextPage = ({ technologies }: any) => {
   return (
@@ -30,6 +31,7 @@ const Home: NextPage = ({ technologies }: any) => {
             </p>
           </div>
           <Atlas technologies={technologies} />
+          <MobileAtlas />
         </div>
       </Layout>
     </>

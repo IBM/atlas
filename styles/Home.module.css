@@ -13,22 +13,34 @@
   color: #4d5358;
 }
 
+.wrapper {
+  display: flex;
+}
+
+.text {
+  margin-right: 4rem;
+}
+
 @media (max-width: 900px) {
   .text {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
   }
-}
 
-.wrapper {
-  display: flex;
-  gap: 200px;
-}
-
-@media (max-width: 900px) {
   .wrapper {
     flex-direction: column;
     gap: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    display: none;
+  }
+  .subheading {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    max-width: 100%;
   }
 }
