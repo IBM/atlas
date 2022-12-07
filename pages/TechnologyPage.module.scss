@@ -11,6 +11,7 @@
   font-size: 14px;
   line-height: 18px;
   grid-column: 1 / 4;
+  color: var(--color-heading);
 }
 
 .header {
@@ -22,19 +23,21 @@
 .description {
   font-size: 24px;
   line-height: 30px;
+  color: var(--color-heading);
 }
 
 .sticky {
   grid-row: 2;
   grid-column: 1 / 4;
-  background-color: white;
-  border-right: 1px solid $cool-gray-20;
+  background-color: var(--color-background);
+  border-right: 1px solid var(--color-border);
   margin-left: -2rem;
   padding: 1rem 2rem;
 }
 
 .strategicMilestones {
   font-weight: bold;
+  color: var(--color-heading);
   font-size: 1rem;
   margin-top: 44px;
 }
@@ -48,6 +51,7 @@
   font-size: 28px;
   line-height: 36px;
   font-weight: bold;
+  color: var(--color-heading);
 }
 
 .mobileTechnologyTitle {
@@ -83,7 +87,7 @@
   flex-direction: column;
   min-width: 320px;
   padding: 0 1rem;
-  border-right: 1px solid $cool-gray-20 /*cg20*/;
+  border-right: 1px solid var(--color-border);
   padding-bottom: 8px;
 }
 
@@ -98,6 +102,7 @@
 
 .milestoneSummary {
   font-weight: bold;
+  color: var(--color-heading);
   /* height: 4rem; */
 }
 
@@ -107,7 +112,7 @@
 }
 
 .howWillWeDoThis {
-  color: $blue-60;
+  color: var(--color-link);
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -115,14 +120,16 @@
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
+  transition: color 0.15s ease;
 
   &:hover {
-    color: $blue-70;
+    color: var(--color-link-hover);
   }
 }
 
 .single .milestoneSummary {
   min-width: 32%;
+  color: var(--color-heading);
 }
 
 .single .milestoneDescription {
@@ -135,7 +142,7 @@
 }
 
 .yearWrapper {
-  border-bottom: 1px solid $cool-gray-100;
+  border-bottom: 1px solid var(--color-heading);
   margin-bottom: 40px;
 }
 
@@ -143,6 +150,7 @@
   font-weight: 300;
   font-size: 72px;
   letter-spacing: -2px;
+  color: var(--color-heading);
 }
 
 @media (max-width: 1024px) {

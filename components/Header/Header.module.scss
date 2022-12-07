@@ -1,3 +1,15 @@
+.headerWrapper {
+  --cds-background: var(--color-background);
+  --cds-text-primary: var(--color-heading);
+  --cds-text-secondary: var(--color-text);
+  --cds-border-subtle: var(--color-border);
+  --cds-icon-primary: var(--color-heading);
+  --cds-icon-secondary: var(--color-text);
+  --cds-layer: var(--color-layer);
+  --cds-layer-hover: var(--color-layer-hover);
+  --cds-background-active: var(--color-border);
+}
+
 .logoWrapper {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -6,6 +18,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   margin: 1px 0;
   height: 1.45rem;
@@ -14,6 +27,12 @@
 
 .headerName {
   display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert(1);
+  }
 }
 
 @media (max-width: 600px) {

@@ -10,7 +10,7 @@
 .subheading {
   max-width: 300px;
   font-weight: 400;
-  color: #4d5358;
+  color: var(--color-heading);
 }
 
 .wrapper {
