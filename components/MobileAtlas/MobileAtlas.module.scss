@@ -1,17 +1,21 @@
 .wrapper {
   min-width: 80vw;
-  position: absolute;
-  right: 0;
-  bottom: 5rem;
   display: none;
+  justify-content: flex-end;
+  margin-top: 0;
 }
 
 .wrapper a {
   text-decoration: underline;
 }
 
+.wrapper svg {
+  min-width: 82vw;
+  max-width: 82vw;
+}
+
 @media (max-width: 600px) {
   .wrapper {
-    display: block;
+    display: flex;
   }
 }

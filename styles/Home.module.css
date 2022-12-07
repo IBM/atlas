@@ -40,7 +40,10 @@
   }
   .subheading {
     padding-left: 1rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
     max-width: 100%;
+  }
+  .text {
+    margin-right: 0;
   }
 }
