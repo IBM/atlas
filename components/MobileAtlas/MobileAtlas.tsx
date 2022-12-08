@@ -392,8 +392,7 @@ const MobileAtlas = () => {
           <text
             id="automation"
             transform="translate(6.765 140.411)"
-            fill="#121619"
-            font-family="IBMPlexSans, 'IBM Plex Sans'"
+            fontFamily="IBMPlexSans, 'IBM Plex Sans'"
             font-size="16"
           >
             <tspan x="0" y="0">
@@ -405,8 +404,7 @@ const MobileAtlas = () => {
           <text
             id="data"
             transform="translate(44.263 220.411)"
-            fill="#121619"
-            font-family="IBMPlexSans, 'IBM Plex Sans'"
+            fontFamily="IBMPlexSans, 'IBM Plex Sans'"
             font-size="16"
           >
             <tspan x="0" y="0">
@@ -414,12 +412,11 @@ const MobileAtlas = () => {
             </tspan>
           </text>
         </Link>
-        <Link href="/hybrid">
+        <Link href="/hybrid-cloud">
           <text
             id="hybrid-cloud"
             transform="translate(0 300.411)"
-            fill="#121619"
-            font-family="IBMPlexSans, 'IBM Plex Sans'"
+            fontFamily="IBMPlexSans, 'IBM Plex Sans'"
             font-size="16"
           >
             <tspan x="0" y="0">
@@ -431,8 +428,7 @@ const MobileAtlas = () => {
           <text
             id="quantum"
             transform="translate(76.006 375.411)"
-            fill="#121619"
-            font-family="IBMPlexSans, 'IBM Plex Sans'"
+            fontFamily="IBMPlexSans, 'IBM Plex Sans'"
             font-size="16"
           >
             <tspan x="0" y="0">
@@ -444,8 +440,7 @@ const MobileAtlas = () => {
           <text
             id="security"
             transform="translate(150.733 424.411)"
-            fill="#121619"
-            font-family="IBMPlexSans, 'IBM Plex Sans'"
+            fontFamily="IBMPlexSans, 'IBM Plex Sans'"
             font-size="16"
           >
             <tspan x="0" y="0">
@@ -457,8 +452,7 @@ const MobileAtlas = () => {
           <text
             id="ai"
             transform="translate(117.684 58.971)"
-            fill="#121619"
-            font-family="IBMPlexSans, 'IBM Plex Sans'"
+            fontFamily="IBMPlexSans, 'IBM Plex Sans'"
             font-size="16"
           >
             <tspan x="0" y="0">

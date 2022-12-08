@@ -8,11 +8,12 @@
   font-size: 20px;
   font-weight: 400;
   transition: fill 0.15s ease;
+  fill: var(--color-heading);
 }
 
 .wrapper a:hover {
   text-decoration-line: underline;
-  fill: #0f62fe;
+  fill: var(--color-link);
 }
 
 .years text {
