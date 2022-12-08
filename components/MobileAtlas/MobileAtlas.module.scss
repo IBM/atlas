@@ -5,8 +5,9 @@
   margin-top: 0;
 }
 
-.wrapper a {
+.wrapper text {
   text-decoration: underline;
+  fill: var(--color-heading);
 }
 
 .wrapper svg {

@@ -111,7 +111,7 @@ const Atlas = ({ technologies }: any) => {
           <g className={styles.years}>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 254.696c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -122,7 +122,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 254.696c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"
@@ -135,7 +135,7 @@ const Atlas = ({ technologies }: any) => {
             </g>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 212.87c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -146,7 +146,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 212.87c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"
@@ -159,7 +159,7 @@ const Atlas = ({ technologies }: any) => {
             </g>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 172.193c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -170,7 +170,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 172.193c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"
@@ -183,7 +183,7 @@ const Atlas = ({ technologies }: any) => {
             </g>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 131.816c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -194,7 +194,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 131.816c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"
@@ -207,7 +207,7 @@ const Atlas = ({ technologies }: any) => {
             </g>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 91.375c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -218,7 +218,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 91.375c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"
@@ -231,7 +231,7 @@ const Atlas = ({ technologies }: any) => {
             </g>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 51.21c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -242,7 +242,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 51.21c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"
@@ -255,7 +255,7 @@ const Atlas = ({ technologies }: any) => {
             </g>
             <g>
               <path
-                fill="#fff"
+                fill="var(--color-background)"
                 d="M434.55 11.495c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <path
@@ -266,7 +266,7 @@ const Atlas = ({ technologies }: any) => {
                 d="M434.55 11.495c0 6.116-5.4 11.12-12 11.12h-28c-6.6 0-12-5.004-12-11.12s5.4-11.12 12-11.12h28c6.6 0 12 5.004 12 11.12Z"
               />
               <text
-                fill="#121619"
+                fill="var(--color-heading)"
                 fontFamily="IBMPlexSans-Medium, 'IBM Plex Sans'"
                 fontSize="14"
                 fontWeight="500"

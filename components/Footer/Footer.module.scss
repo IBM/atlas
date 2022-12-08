@@ -21,3 +21,10 @@
   max-width: 100%;
   filter: invert(1);
 }
+
+@media (max-width: 600px) {
+  .logoWrapper {
+    padding-left: 1rem;
+    padding-bottom: 8px;
+  }
+}
