@@ -2,6 +2,8 @@
   width: 100%;
   max-width: 900px;
   padding-right: 2rem;
+  margin-left: 8rem;
+  margin-top: 8px;
 }
 
 .wrapper a {
@@ -85,8 +87,8 @@
 
 @media (max-width: 1024px) {
   .wrapper {
-    max-width: 85vw;
-    margin: 0 auto;
+    max-width: 80vw;
+    margin: 2rem auto;
   }
 }
 
