@@ -352,7 +352,7 @@ const Atlas = ({ technologies }: any) => {
               data-opacity={0.35}
             />
           </Link>
-          <Link href="/security" data-tip="Security" data-for="segment">
+          <Link href="/security/" data-tip="Security" data-for="segment">
             <text id="security_label" transform="translate(718.398 202.988)">
               <tspan x="0" y="0">
                 Security
