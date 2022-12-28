@@ -24,9 +24,9 @@ const AtlasHeader = () => (
       </HeaderName>
     </div>
     <HeaderNavigation aria-label="IBM Technology Atlas">
-      <Link passHref href="https://research.ibm.com" legacyBehavior>
+      {/* <Link passHref href="https://research.ibm.com" legacyBehavior>
         <HeaderMenuItem>10 Year Vision</HeaderMenuItem>
-      </Link>
+      </Link> */}
       <HeaderMenu aria-label="Link 4" menuLinkName="Roadmaps">
         <Link href="/ai" passHref legacyBehavior>
           <HeaderMenuItem>AI</HeaderMenuItem>

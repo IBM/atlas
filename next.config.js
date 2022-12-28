@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+const path =
+  process.env.NODE_ENV === "production"
+    ? "/Vincent-Patrick-Picone/ibm-technology-atlas/"
+    : undefined;
+
 const nextConfig = {
-  basePath: "/Vincent-Patrick-Picone/ibm-technology-atlas",
-  assetPrefix:
-    process.env.NODE_ENV === "production"
-      ? "/Vincent-Patrick-Picone/ibm-technology-atlas/"
-      : "",
+  basePath: path,
+  assetPrefix: path,
   reactStrictMode: true,
   swcMinify: true,
 };
