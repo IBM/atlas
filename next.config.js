@@ -2,7 +2,7 @@
 
 const path =
   process.env.NODE_ENV === "production"
-    ? "/Vincent-Patrick-Picone/ibm-technology-atlas/"
+    ? "/Vincent-Patrick-Picone/ibm-technology-atlas"
     : undefined;
 
 const nextConfig = {
